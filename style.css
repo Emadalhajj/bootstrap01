@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.name-brand {}
+
+.name-brand:hover {
+    text-shadow: 5px 1px 10px grey;
+}
+
+.carousel-caption {
+    background-color: rgba(86, 184, 190, 0.5);
+    border-radius: 5px;
+}
+
+.aside-icon {
+    font-size: 50px;
+}
+
+.d-flex a {
+    color: rgb(15, 116, 156)
+}
+
+.fixed-img {
+    background-image: url(./images/20201016121652.jpg );
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+}
+
+.cardoverlay {
+    position: relative;
+    min-height: 450px;
+    overflow: hidden;
+}
+
+.cardoverlay::before {
+    content: "";
+    position: absolute;
+    transition: 1s;
+    opacity: 0.5;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(44, 39, 23, 0.274);
+}
+
+.cardoverlay:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.cardoverlay::after {
+    content: "";
+    position: absolute;
+    transition: 1s;
+    opacity: 0.3;
+    width: 0;
+    height: 0;
+    right: 0;
+    z-index: 2;
+    /* background-color: rgba(44, 39, 23, 0.274); */
+}
+
+.cardoverlay:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-infor {
+    position: absolute;
+    right: 13px;
+    bottom: 22px;
+    z-index: 10;
+}
+
+/* .thanks{
+    font-size: 100px;
+    color: red;
+} */
+.fixed-img2 {
+    background-image: url(./images/tourism-in-Yemen.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+}
+
+.wrapper {
+    padding-top: 30px;
+    margin: 10vh;
+}
+
+.card-hover {
+   
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    min-height: 350px;
+    background-image: url(./images/em.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    justify-content: center;
+}
+.allcoards{
+    /* display: grid; */
+}
+
+.card-hover:hover {
+    background-image: url(./images/empl.png);
+    width: 300px;
+    height: 250px;
+    /* color: black; */
+}
+
+.card-body:hover .text-white {
+    color: black;
+}
+
+.card-body:hover h4,
+small,
+a {
+    color: black;
+}
+
+.card-body:hover .media-body {
+    color: black;
+}
+
+.card.card-has-bg {
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.text-white {
+    /* --bs-text-opacity: 1; */
+    color: white;
+    font-size: 18px;
+}
+
+.thank-card {
+    border: none;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    overflow: hidden;
+    border-radius: 20px;
+    min-height: 450px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.card-body small {
+    font-size: 20px;
+}
+
+.card-hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.card-hover:hover:before {
+    background: none;
+}
+
+.media-body small {
+    font-size: 28px;
+}
+
+/* .card-title:hover{
+    transform: scale(3);
+    background-color: blue;
+} */
+.img-face {
+    height: 50%;
+    border: 4px solid gray;
+}
+
+
+/*--news posts*/
+.postcard {
+    color: #0076bd;
+    ;
+    flex-direction: row-reverse;
+    flex-wrap: inherit;
+    height: 400px;
+    /* flex-wrap: wrap; */
+    display: flex;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    margin: 0 0 2rem 0;
+    overflow: hidden;
+    position: relative;
+    box-shadow: -5px 5px 20px 10px rgb(201, 198, 241);
+}
+
+.postcard__bar {
+
+    width: 50px;
+    height: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #424242;
+    transition: width 0.2s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+.postcard.light {
+    background-color: #e1e5ea;
+}
+
+.postcard__img_link {
+    display: contents;
+
+}
+
+.postcard:hover img {
+    transform: scale(1.1);
+
+}
+
+.postcard:hover .postcard__bar {
+    width: 100px;
+    background-color: #0076bd;
+}
+
+.postcard:hover .postcard__tagbox ul i {
+    background-color: #0076bd;
+}
+
+.postcard__img {
+    max-width: 300px;
+    max-height: 100%;
+    transition: transform 0.3s ease;
+    transition: 0.3s ease;
+    /* max-height: 180px; */
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    transform: rotate(5deg) scale(1.1);
+    /* display: contents; */
+}
+
+.d-flex {
+    font-size: 18px;
+
+}
+
+.postcard__text {
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.postcard__tagbox {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 14px;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+.tag__item {
+    display: inline-block;
+    background: rgba(83, 83, 83, 0.4);
+    border-radius: 3px;
+    padding: 2.5px 10px;
+    margin: 0 5px 5px 0;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+    transition: background-color 0.5s;
+}
+
+.postcard2 {
+    flex-direction: row;
+
+}
+
+.postcard2__img {
+    transform: rotate(356deg) scale(1.1);
+}
+
+.rounded-4 {
+    border-radius: 7px;
+}
